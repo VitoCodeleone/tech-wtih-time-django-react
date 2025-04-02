@@ -1,2 +1,42 @@
-env
-__pycache__
+# 🔹 Bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 🔹 Virtual environment (venv)
+venv/
+env/
+
+# 🔹 Django secret key and settings (if separate)
+*.env
+config/settings_local.py  # If you have a local settings file
+
+# 🔹 Database (SQLite)
+db.sqlite3
+db.sqlite3-journal
+
+# 🔹 Migrations (optional: only ignore auto-generated files)
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/__pycache__/
+
+# 🔹 Media & Static (optional: if served separately)
+media/
+staticfiles/
+static/
+
+# 🔹 Logs & Debug Files
+logs/
+*.log
+*.out
+*.err
+debug.log
+
+# 🔹 IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 🔹 Dependencies (if using Docker or compiled assets)
+node_modules/
+*.lock
